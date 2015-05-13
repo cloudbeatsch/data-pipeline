@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LocationPipeline.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="StorageConnectionString" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">StorageConnectionString</Value>
+    </Setting>
+    <Setting Name="EventHubNamespace" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EventHubNamespace</Value>
+    </Setting>
+    <Setting Name="EventHubName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EventHubName</Value>
+    </Setting>
+    <Setting Name="EventHubPartitionCount" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="EventHubPolicyName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">reader</Value>
+    </Setting>
+    <Setting Name="EventHubPolicyKey" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">EventHubPolicyKey</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
