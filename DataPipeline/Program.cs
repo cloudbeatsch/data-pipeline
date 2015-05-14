@@ -71,7 +71,9 @@ namespace DataPipeline
                 partitionCount);    //Parallelism hint - partition count
 
             // Use a JSON Serializer to serialize data from the Java Spout into a JSON string
-            List<string> javaSerializerInfo = new List<string>() { "microsoft.scp.storm.multilang.CustomizedInteropJSONSerializer" };
+            List<string> javaSerializerInfo = new List<string>() {
+                "microsoft.scp.storm.multilang.CustomizedInteropJSONSerializer" 
+            };
             // End Java Eventhub Spout Construction
 
             // Add the locations bolt to the topology. This filters locations messages out of all of nitrogen.
