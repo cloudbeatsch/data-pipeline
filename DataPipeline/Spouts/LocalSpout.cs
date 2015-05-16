@@ -12,6 +12,7 @@ using Microsoft.SCP;
 using Microsoft.SCP.Rpc.Generated;
 
 using DataPipeline.Entities;
+using System.Globalization;
 
 namespace DataPipeline.Spouts
 {
@@ -82,8 +83,8 @@ namespace DataPipeline.Spouts
                 locationDict.Add("type", "location");
                 
                 Dictionary<string, string> bodyDict = new Dictionary<string, string>();
-                bodyDict.Add("latitude", double.Parse(cols[1].Trim()).ToString());
-                bodyDict.Add("longitude", double.Parse(cols[2].Trim()).ToString());
+                bodyDict.Add("latitude", double.Parse(cols[1].Trim(), CultureInfo.InvariantCulture).ToString());
+                bodyDict.Add("longitude", double.Parse(cols[2].Trim(), CultureInfo.InvariantCulture).ToString());
 
                 locationDict.Add("body", JsonConvert.SerializeObject(bodyDict));
                 var jsonString = JsonConvert.SerializeObject(locationDict);
